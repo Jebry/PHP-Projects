@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body align="middle">
+        <h1 align="middle">Hi, Please fill the form of shipment order</h1>
+        <form name="form" action="AdderssForm.php" method="POST">
+            <label>Enter Your First Name</label> 
+            <input  title=" Should have variable names no signs no numbers" type="text" maxlength="50" name="fname" pattern="[a-zA-Z]*"><br>
+            <br>
+            <br>
+            <label>Enter Your Last Name</label> 
+            <input title="Should have variable names no signs no numbers" type="text" maxlength="50" name="lname" pattern="[a-zA-Z]*" required><br>
+            <br>
+            <br>
+            <label>Enter Your E-mail</label> 
+            <input title=" The max charecter is 50" type="text" maxlength="50" name="email"  required><br>
+            <br>
+            <br>
+            <label>The Date</label>
+            <input name ="date" type="date"><br>
+            <br>
+            <br>
+            <label>Are You Runner</label> <input type="checkbox" name="runner" value="Runner"><br>
+            <br>
+            <br>
+            <label>Favorite terrain</label><br>
+            Road:<input type="radio" name="terrain" value="road"><br>
+            Trail:<input type="radio" name="terrain" value="TRAIL" checked><br>
+            Track:<input type="radio" name="terrain" value="TRUCK"><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label> Rate your shoes:</label>
+            <select name="shoesrating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option vlaue="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option vlaue="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <br>
+            <button name ="submit" type="submit" id="submit" >SUBMIT</button>
+        </form>
+    </body>
+</html>
